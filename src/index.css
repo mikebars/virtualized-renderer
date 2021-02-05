@@ -1,0 +1,23 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#react-container {
+  margin: 0;
+  padding: 0;
+}
+
+img[alt=""] {
+  position: relative;
+}
+
+img[alt=""]:after {
+  background-color: inherit;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}

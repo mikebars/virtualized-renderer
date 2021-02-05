@@ -1,0 +1,70 @@
+###########################################################################
+# `virtualized-renderer`                                                  #
+# `Workspace`                                                             #
+# `.prettierignore`                                                       #
+###########################################################################
+
+# Build
+**/*.tgz
+**/.dynamodb/**
+**/.next/**
+**/.nuxt/**
+**/.serverless/**
+**/.vscode-test/**
+**/.vuepress/dist/**
+**/build/**
+**/dist/**
+**/out/**
+
+# Cache
+**/*.tsbuildinfo
+**/.cache/**
+**/.cache
+**/.eslintcache
+**/.fusebox/**
+**/.grunt
+**/.jestcache/**
+**/.npm
+**/.parcel-cache
+**/.pnp.*
+**/.rpt2_cache/**
+**/.rts2_cache_cjs/**
+**/.rts2_cache_es/**
+**/.rts2_cache_umd/**
+**/.stylelintcache
+**/.yarn/build-state.yml
+**/.yarn/cache/**
+**/.yarn/install-state.gz
+**/.yarn/unplugged/**
+
+# Coverage
+**/*.lcov
+**/.nyc_output/**
+**/coverage/**
+**/lib-cov/**
+
+# Dependencies
+**/bower_components/**
+**/jspm_packages/**
+**/node_modules/**
+**/web_modules/**
+
+# Files
+**/*.pid
+**/*.pid.lock
+**/*.seed
+**/.DS_Store
+**/.lock-wscript
+**/.node_repl_history
+**/.tern-port
+**/.yarn-integrity
+**/pids
+**/yarn-*
+
+# Logs
+**/*.cpuprofile
+**/*.log
+**/*-debug.log*
+**/*-error.log*
+**/logs
+**/report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json

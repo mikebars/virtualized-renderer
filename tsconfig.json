@@ -1,0 +1,494 @@
+{
+  /***************************************************************************/
+  /* `virtualized-renderer`                                                  */
+  /* `Workspace`                                                             */
+  /* `tsconfig.json`                                                         */
+  /***************************************************************************/
+
+  // JSON schema for the TypeScript compiler's configuration file.
+  "$schema": "http://json.schemastore.org/tsconfig",
+
+  // Enable Compile-on-Save for this project.
+  // "compileOnSave": false,
+
+  // Instructs the TypeScript compiler how to compile .ts files.
+  "compilerOptions": {
+    // Allow javascript files to be compiled.
+    "allowJs": true,
+
+    // Allow default imports from modules with no default export.
+    // This does not affect code emit, just typechecking.
+    "allowSyntheticDefaultImports": true,
+
+    // Allow accessing UMD globals from modules.
+    // "allowUmdGlobalAccess": false,
+
+    // Do not report errors on unreachable code.
+    // "allowUnreachableCode": false,
+
+    // Do not report errors on unused labels.
+    // "allowUnusedLabels": false,
+
+    // Parse in strict mode and emit 'use strict' for each source file.
+    // Requires TypeScript version 2.1 or later.
+    "alwaysStrict": true,
+
+    // Have recompiles in '--incremental' and '--watch' assume that changes within a file will only affect files directly depending on it.
+    // "assumeChangesOnlyAffectDirectDependencies": false,
+
+    // Base directory to resolve non-relative module names.
+    "baseUrl": ".",
+
+    // The character set of the input files.
+    // "charset": "utf8",
+
+    // Report errors in .js files.
+    // Requires TypeScript version 2.3 or later.
+    "checkJs": true,
+
+    // Enables building for project references.
+    "composite": true,
+
+    // Generates corresponding d.ts files.
+    // "declaration": false,
+
+    // Specify output directory for generated declaration files.
+    // Requires TypeScript version 2.0 or later.
+    // "declarationDir": "",
+
+    // Generates a sourcemap for each corresponding '.d.ts' file.
+    // Requires TypeScript version 2.9 or later.
+    // "declarationMap": false,
+
+    // Show diagnostic information.
+    "diagnostics": true,
+
+    // Disable size limit for JavaScript project.
+    // Requires TypeScript version 2.0 or later.
+    "disableSizeLimit": true,
+
+    // Disable solution searching for this project.
+    // "disableSolutionSearching": false,
+
+    // Disable use of source files instead of declaration files from referenced projects.
+    // "disableSourceOfProjectReferenceRedirect": false,
+
+    // Provide full support for iterables in 'for-of', spread, and destructuring when targeting 'ES5' or 'ES3'.
+    // Requires TypeScript version 2.3 or later.
+    // "downlevelIteration": false,
+
+    // Emit a UTF-8 Byte Order Mark (BOM) in the beginning of output files.
+    // "emitBOM": false,
+
+    // Only emit '.d.ts' declaration files.
+    // "emitDeclarationOnly": false,
+
+    // Emit design-type metadata for decorated declarations in source.
+    // "emitDecoratorMetadata": false,
+
+    // Emit '__importStar' and '__importDefault' helpers for runtime babel ecosystem compatibility
+    // and enable '--allowSyntheticDefaultImports' for typesystem compatibility.
+    // Requires TypeScript version 2.7 or later.
+    "esModuleInterop": true,
+
+    // Enables experimental support for ES7 decorators.
+    // "experimentalDecorators": false,
+
+    // Show verbose diagnostic information.
+    "extendedDiagnostics": true,
+
+    // Disallow inconsistently-cased references to the same file.
+    "forceConsistentCasingInFileNames": true,
+
+    // Import emit helpers (e.g. '__extends', '__rest', etc..) from tslib.
+    // Requires TypeScript version 2.1 or later.
+    // "importHelpers": false,
+
+    // Specify emit/checking behavior for imports that are only used for types.
+    "importsNotUsedAsValues": "error",
+
+    // Enable incremental compilation.
+    "incremental": true,
+
+    // Emit a single file with source maps instead of having a separate file.
+    // "inlineSourceMap": false,
+
+    // Emit the source alongside the sourcemaps within a single file; requires --inlineSourceMap to be set.
+    // "inlineSources": false,
+
+    // Unconditionally emit imports for unresolved files.
+    "isolatedModules": true,
+
+    // Specify JSX code generation: 'preserve', 'react', 'react-jsx', 'react-jsxdev' or 'react-native'.
+    "jsx": "react-jsx",
+
+    // Specify the JSX factory function to use when targeting react JSX emit, e.g. 'React.createElement' or 'h'.
+    // Requires TypeScript version 2.1 or later.
+    // "jsxFactory": "React.createElement",
+
+    // Specify the JSX Fragment reference to use for fragements when targeting react JSX emit, e.g. 'React.Fragment' or 'Fragment'.
+    // Requires TypeScript version 4.0 or later.
+    // "jsxFragmentFactory": "React.Fragment",
+
+    // Resolve 'keyof' to string valued property names only (no numbers or symbols).
+    // Requires TypeScript version 2.9 or later.
+    // "keyofStringsOnly": false,
+
+    // List of library files to be included in the compilation.
+    // Possible values are: 'ES5', 'ES6', 'ES2015', 'ES7', 'ES2016', 'ES2017', 'ES2018', 'ESNext', 'DOM', 'DOM.Iterable', 'WebWorker', 'ScriptHost', 'ES2015.Core', 'ES2015.Collection', 'ES2015.Generator', 'ES2015.Iterable', 'ES2015.Promise', 'ES2015.Proxy', 'ES2015.Reflect', 'ES2015.Symbol', 'ES2015.Symbol.WellKnown', 'ES2016.Array.Include', 'ES2017.object', 'ES2017.Intl', 'ES2017.SharedMemory', 'ES2017.String', 'ES2017.TypedArrays', 'ES2018.Intl', 'ES2018.Promise', 'ES2018.RegExp', 'ESNext.AsyncIterable', 'ESNext.Array', 'ESNext.Intl', 'ESNext.Symbol'.
+    // Requires TypeScript version 2.0 or later.
+    "lib": [
+      "DOM",
+      "DOM.Iterable",
+      "ES2015",
+      "ES2015.Collection",
+      "ES2015.Core",
+      "ES2015.Generator",
+      "ES2015.Iterable",
+      "ES2015.Promise",
+      "ES2015.Proxy",
+      "ES2015.Reflect",
+      "ES2015.Symbol",
+      "ES2015.Symbol.WellKnown",
+      "ES2016",
+      "ES2016.Array.Include",
+      "ES2017",
+      "ES2017.Intl",
+      "ES2017.Object",
+      "ES2017.SharedMemory",
+      "ES2017.String",
+      "ES2017.TypedArrays",
+      "ES2018",
+      "ES2018.AsyncGenerator",
+      "ES2018.AsyncIterable",
+      "ES2018.Intl",
+      "ES2018.Promise",
+      "ES2018.Regexp",
+      "ES2019",
+      "ES2019.Array",
+      "ES2019.Object",
+      "ES2019.String",
+      "ES2019.Symbol",
+      "ES2020",
+      "ES2020.BigInt",
+      "ES2020.Promise",
+      "ES2020.String",
+      "ES2020.Symbol.WellKnown",
+      "ES5",
+      "ES6",
+      "ESNext",
+      "ESNext.Array",
+      "ESNext.AsyncIterable",
+      "ESNext.BigInt",
+      "ESNext.Intl",
+      "ESNext.Promise",
+      "ESNext.String",
+      "ESNext.Symbol",
+      "ScriptHost",
+      "WebWorker",
+      "WebWorker.ImportScripts"
+    ],
+
+    // Enable to list all emitted files.
+    // Requires TypeScript version 2.0 or later.
+    // "listEmittedFiles": false,
+
+    // Print names of files part of the compilation.
+    // "listFiles": false,
+
+    // Print names of files that are part of the compilation and then stop processing.
+    // "listFilesOnly": false,
+
+    // Specifies the location where debugger should locate map files instead of generated locations.
+    // "mapRoot": "",
+
+    // The maximum dependency depth to search under node_modules and load JavaScript files.
+    // Only applicable with --allowJs.
+    // "maxNodeModuleJsDepth": 0,
+
+    // Specify module code generation: 'None', 'CommonJS', 'AMD', 'System', 'UMD', 'ES6', 'ES2015', 'ES2020' or 'ESNext'.
+    // Only 'AMD' and 'System' can be used in conjunction with --outFile.
+    "module": "ESNext",
+
+    // Specifies module resolution strategy: 'node' (Node) or 'classic' (TypeScript pre 1.6).
+    "moduleResolution": "Node",
+
+    // Specifies the end of line sequence to be used when emitting files: 'crlf' (Windows) or 'lf' (Unix).
+    "newLine": "lf",
+
+    // Do not emit output.
+    "noEmit": true,
+
+    // Do not generate custom helper functions like __extends in compiled output.
+    // "noEmitHelpers": false,
+
+    // Do not emit outputs if any type checking errors were reported.
+    "noEmitOnError": true,
+
+    // Do not truncate error messages.
+    "noErrorTruncation": true,
+
+    // Report errors for fallthrough cases in switch statement.
+    "noFallthroughCasesInSwitch": true,
+
+    // Warn on expressions and declarations with an implied 'any' type.
+    "noImplicitAny": true,
+
+    // Report error when not all code paths in function return a value.
+    "noImplicitReturns": true,
+
+    // Raise error on 'this' expressions with an implied any type.
+    "noImplicitThis": true,
+
+    // Do not emit 'use strict' directives in module output.
+    // "noImplicitUseStrict": false,
+
+    // Do not include the default library file (lib.d.ts).
+    // "noLib": false,
+
+    // Do not add triple-slash references or module import targets to the list of compiled files.
+    // "noResolve": false,
+
+    // Disable strict checking of generic signatures in function types.
+    // "noStrictGenericChecks": false,
+
+    // Include 'undefined' in index signature results.
+    // Requires TypeScript version 4.1 or later.
+    "noUncheckedIndexedAccess": true,
+
+    // Report errors on unused locals.
+    // Requires TypeScript version 2.0 or later.
+    "noUnusedLocals": true,
+
+    // Report errors on unused parameters.
+    // Requires TypeScript version 2.0 or later.
+    "noUnusedParameters": true,
+
+    // Redirect output structure to the directory.
+    // "outDir": "",
+
+    // Concatenate and emit output to single file.
+    // "outFile": "",
+
+    // Specify path mapping to be computed relative to baseUrl option.
+    // "paths": {},
+
+    // List of TypeScript language server plugins to load.
+    // Requires TypeScript version 2.3 or later.
+    // "plugins": [],
+
+    // Do not erase const enum declarations in generated code.
+    // "preserveConstEnums": false,
+
+    // Do not resolve symlinks to their real path; treat a symlinked file like a real one.
+    // "preserveSymlinks": false,
+
+    // Keep outdated console output in watch mode instead of clearing the screen.
+    // "preserveWatchOutput": false,
+
+    // Stylize errors and messages using color and context (experimental).
+    // "pretty": true,
+
+    // Specifies the object invoked for createElement and __spread when targeting 'react' JSX emit.
+    // "reactNamespace": "React",
+
+    // Do not emit comments to output.
+    // "removeComments": false,
+
+    // Include modules imported with '.json' extension.
+    // Requires TypeScript version 2.9 or later.
+    "resolveJsonModule": true,
+
+    // Specifies the root directory of input files.
+    // Use to control the output directory structure with --outDir.
+    // "rootDir": "",
+
+    // Specify list of root directories to be used when resolving modules.
+    // "rootDirs": [],
+
+    // Use `--skipLibCheck` instead.
+    // Skip type checking of default library declaration files.
+    // "skipDefaultLibCheck": false,
+
+    // Skip type checking of declaration files.
+    // Requires TypeScript version 2.0 or later.
+    "skipLibCheck": true,
+
+    // Generates corresponding '.map' file.
+    "sourceMap": true,
+
+    // Specifies the location where debugger should locate TypeScript files instead of source locations.
+    // "sourceRoot": "",
+
+    // Enable all strict type checking options.
+    // Requires TypeScript version 2.3 or later.
+    "strict": true,
+
+    // Enable stricter checking of of the `bind`, `call`, and `apply` methods on functions.
+    "strictBindCallApply": true,
+
+    // Disable bivariant parameter checking for function types.
+    // Requires TypeScript version 2.6 or later.
+    "strictFunctionTypes": true,
+
+    // Enable strict null checks.
+    // Requires TypeScript version 2.0 or later.
+    "strictNullChecks": true,
+
+    // Ensure non-undefined class properties are initialized in the constructor.
+    // Requires TypeScript version 2.7 or later.
+    "strictPropertyInitialization": true,
+
+    // Do not emit declarations for code that has an '@internal' annotation.
+    "stripInternal": true,
+
+    // Suppress excess property checks for object literals.
+    // "suppressExcessPropertyErrors": false,
+
+    // Suppress noImplicitAny errors for indexing objects lacking index signatures.
+    // "suppressImplicitAnyIndexErrors": false,
+
+    // Specify ECMAScript target version: 'ES3', 'ES5', 'ES6'/'ES2015', 'ES2016', 'ES2017', 'ES2018', 'ES2019', 'ES2020', 'ESNext'.
+    "target": "ES5",
+
+    // Enable tracing of the name resolution process.
+    // "traceResolution": false,
+
+    // Specify file to store incremental compilation information.
+    "tsBuildInfoFile": ".tsbuildinfo"
+
+    // Specify list of directories for type definition files to be included.
+    // Requires TypeScript version 2.0 or later.
+    // "typeRoots": [],
+
+    // Type declaration files to be included in compilation.
+    // Requires TypeScript version 2.0 or later.
+    // "types": [],
+
+    // Emit ECMAScript standard class fields.
+    // Requires TypeScript version 3.7 or later.
+    // "useDefineForClassFields": false,
+
+    // Watch input files.
+    // "watch": false,
+  },
+
+  // Specifies a list of files to be excluded from compilation.
+  // The 'exclude' property only affects the files included via the 'include' property and not the 'files' property.
+  // Glob patterns require TypeScript version 2.0 or later.
+  "exclude": [
+    "!**//.*.cjs",
+    "!**//.*.js",
+    "!**//.*.jsx",
+    "!**//.*.mjs",
+    "!**//.*.ts",
+    "!**//.*.tsx",
+    "!**/*.cjs",
+    "!**/*.js",
+    "!**/*.jsx",
+    "!**/*.mjs",
+    "!**/*.ts",
+    "!**/*.tsx",
+    "**/build/**",
+    "**/coverage/**",
+    "**/node_modules/**",
+    "**/patches/**",
+    "**/public/**"
+  ],
+
+  // Path to base configuration file to inherit from.
+  // Requires TypeScript version 2.1 or later.
+  // "extends": "",
+
+  // If no 'files' or 'include' property is present in a tsconfig.json, the compiler defaults to including all files in the containing directory and subdirectories except those specified by 'exclude'.
+  // When a 'files' property is specified, only those files and those specified by 'include' are included.
+  // "files": [],
+
+  // Specifies a list of glob patterns that match files to be included in compilation.
+  // If no 'files' or 'include' property is present in a tsconfig.json, the compiler defaults to including all files in the containing directory and subdirectories except those specified by 'exclude'.
+  // Requires TypeScript version 2.0 or later.
+  "include": [
+    "**//.*.cjs",
+    "**//.*.js",
+    "**//.*.jsx",
+    "**//.*.mjs",
+    "**//.*.ts",
+    "**//.*.tsx",
+    "**/*.cjs",
+    "**/*.js",
+    "**/*.jsx",
+    "**/*.mjs",
+    "**/*.ts",
+    "**/*.tsx"
+  ]
+
+  // Referenced projects.
+  // Requires TypeScript version 3.0 or later.
+  // "references": [],
+
+  // ts-node options.
+  // See also: https://github.com/TypeStrong/ts-node#configuration-options
+  // "ts-node": {
+  //     // Specify a custom TypeScript compiler.
+  //     // "compiler": "typescript",
+
+  //     // Use TypeScript's compiler host API.
+  //     // "compilerHost": false,
+
+  //     // Instructs the TypeScript compiler how to compile .ts files.
+  //     // "compilerOptions": {},
+
+  //     // Emit output files into `.ts-node` directory.
+  //     // "emit": false,
+
+  //     // Load files from `tsconfig.json` on startup.
+  //     // "files": false,
+
+  //     // Override the path patterns to skip compilation.
+  //     // "ignore": ["/node_modules/"],
+
+  //     // Ignore TypeScript warnings by diagnostic code.
+  //     // "ignoreDiagnostics": [],
+
+  //     // Logs TypeScript errors to stderr instead of throwing exceptions.
+  //     // "logError": false,
+
+  //     // Re-order file extensions so that TypeScript imports are preferred.
+  //     // "preferTsExts": false,
+
+  //     // Use pretty diagnostic formatter.
+  //     // "pretty": false,
+
+  //     // Modules to require, like node's `--require` flag.
+  //     // If specified in tsconfig.json, the modules will be resolved relative to the tsconfig.json file.
+  //     // If specified programmatically, each input string should be pre-resolved to an absolute path for best results.
+  //     // "require": [],
+
+  //     // Scope compiler to files within `cwd`.
+  //     // "scope": false,
+
+  //     // Skip ignore check.
+  //     // "skipIgnore": false,
+
+  //     // Use TypeScript's faster `transpileModule`.
+  //     // "transpileOnly": false,
+
+  //     // **DEPRECATED** Specify type-check is enabled (e.g. `transpileOnly == false`).
+  //     // "typeCheck": true,
+  // },
+
+  // Auto type (.d.ts) acquisition options for this project.
+  // Requires TypeScript version 2.1 or later.
+  // "typeAcquisition": {
+  //     // Enable auto type acquisition.
+  //     // "enable": false,
+
+  //     // Specifies a list of type declarations to be excluded from auto type acquisition.
+  //     // Ex. ["jquery", "lodash"].
+  //     // "exclude": [],
+
+  //     // Specifies a list of type declarations to be included in auto type acquisition.
+  //     // Ex. ["jquery", "lodash"].
+  //     // "include": [],
+  // },
+}

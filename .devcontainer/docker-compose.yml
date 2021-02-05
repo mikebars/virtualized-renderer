@@ -1,0 +1,69 @@
+###########################################################################
+# `virtualized-renderer`                                                  #
+# `Container`                                                             #
+# `docker-compose.yml`                                                    #
+###########################################################################
+
+# Specify the compose format that this file conforms to.
+version: "3.8"
+
+# Specify the set of services that your app is composed of.
+services:
+  # The `virtualized-renderer` service.
+  virtualized-renderer:
+    # Configuration options that are applied at build time.
+    # Can be specified either as a string containing a path to the build context,
+    # or an object with the path specified under context and optionally dockerfile and args.
+    build:
+      # Add build arguments, which are environment variables accessible only during the build process.
+      args:
+        # The IMAGE_REPOSITORY to use.
+        - DEVCONTAINER_IMAGE_REPOSITORY=${DEVCONTAINER_IMAGE_REPOSITORY}
+
+        # The IMAGE_TAG_VARIANT to use.
+        - DEVCONTAINER_IMAGE_TAG_VARIANT=${DEVCONTAINER_IMAGE_TAG_VARIANT}
+
+        # The IMAGE_TAG_VERSION to use.
+        - DEVCONTAINER_IMAGE_TAG_VERSION=${DEVCONTAINER_IMAGE_TAG_VERSION}
+
+        # The PACKAGE_APT_PACKAGE_LIST to use.
+        - DEVCONTAINER_PACKAGE_APT_PACKAGE_LIST=${DEVCONTAINER_PACKAGE_APT_PACKAGE_LIST}
+
+        # The PACKAGE_OH_MY_ZSH_PLUGINS to use.
+        - DEVCONTAINER_PACKAGE_OH_MY_ZSH_PLUGINS=${DEVCONTAINER_PACKAGE_OH_MY_ZSH_PLUGINS}
+
+        # The PACKAGE_OH_MY_ZSH_THEME to use.
+        - DEVCONTAINER_PACKAGE_OH_MY_ZSH_THEME=${DEVCONTAINER_PACKAGE_OH_MY_ZSH_THEME}
+
+        # The USER_GID to use.
+        - DEVCONTAINER_USER_GID=${DEVCONTAINER_USER_GID}
+
+        # The USER_GROUP to use.
+        - DEVCONTAINER_USER_GROUP=${DEVCONTAINER_USER_GROUP}
+
+        # The USER_NAME to use.
+        - DEVCONTAINER_USER_NAME=${DEVCONTAINER_USER_NAME}
+
+        # The USER_UID to use.
+        - DEVCONTAINER_USER_UID=${DEVCONTAINER_USER_UID}
+
+      # Either a path to a directory containing a Dockerfile, or a url to a git repository.
+      # This directory will be used as the build context that is sent to the Docker daemon.
+      context: .
+
+      # Alternate Dockerfile.
+      # Compose will use an alternate file to build with.
+      # Using dockerfile together with image is not allowed.
+      # Attempting to do so results in an error.
+      dockerfile: Dockerfile
+
+    # Override the default command.
+    command: sleep infinity
+
+    # Username or UID (format: <name|uid>[:<group|gid>]).
+    user: ${DEVCONTAINER_USER_UID}:${DEVCONTAINER_USER_GID}
+
+    # Specifies the volumes to be created as part of your app.
+    # This is analogous to running `docker volume create`.
+    volumes:
+      - ..:/workspace:cached
